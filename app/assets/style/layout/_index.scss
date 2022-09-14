@@ -1,0 +1,378 @@
+// layout
+.nav-item{
+  .nav-link{
+    @media(max-width:576px){
+      font-size: 18px;
+    }
+  }
+}
+
+.footer {
+  @media(max-width:576px) {
+    font-size: 12px;
+  }
+}
+
+// login.html
+.btn-close {
+  background: transparent;
+  color: $light;
+  font-size: 28px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  &:hover, &:focus, &:active{
+    color: #fff;
+  }
+}
+
+.login-method{
+  &::before, &::after{
+    content: " ⸺⸺⸺⸺ ";
+    color: $light;
+  }
+}
+
+
+// index.html
+.section1{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 608px;
+  width: 100%;
+  @media(max-width:576px){
+    background-image: url('../images/bg_home_mobile.jpg');
+    height: 336px;
+  }
+  .banner {
+    padding: 52px 86px;
+    border: 1px solid #fff;
+    @media(max-width: 576px){
+      padding: 32px 48px;
+      h1{
+        font-size: 24px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+
+.section2{
+  @media(max-width:576px){
+    h5{
+      font-size: 24px;
+    }
+  }
+  .card{
+    background-color: transparent;
+    border: transparent;
+    &:hover, &:focus{
+      cursor: pointer;
+      background-color: $gray-2020;
+      border: 1px solid $primary;
+       .card-body{
+        .material-icons{
+          background-image: linear-gradient(180deg, $secondary, $primary);
+          background-clip: text;
+          color: transparent;
+        }
+       }
+      }
+    }
+    .card-body{
+      padding: 48px 24px;
+    }
+  }
+
+
+
+.section3{
+  @media(max-width:576px){
+    h5{
+      font-size: 24px;
+    }
+  }
+  .card{
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 48px;
+    .txt{
+      position: absolute;
+      font-weight: 600;
+      font-size: 48px;
+      background-color: $dark;     
+      padding: 2px 8px;
+      top: -2.5rem;
+      left: 2rem;
+    }
+  }
+}
+
+.section4{
+  width: 100%;
+  .code-language{
+    display: flex;
+    .swiper-slide{
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-radius: .5rem;
+      border: 1px solid #fff;
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+
+.section5{
+  .card-footer{
+    border-top: 1px solid #fff;
+    text-align: center;
+  }
+}
+
+
+.section6{
+  .info-bg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 216px 48px;
+    opacity: .3;
+    &:hover,&:focus, &:active{
+      opacity: .9;
+      .info{
+        .material-icons{
+          color: $primary;
+        }
+        .border-bottom-white{
+          border-bottom: 2.5px solid $primary;
+          padding-bottom: 16px;
+          width: 50px;
+        }
+      }
+    }
+    .info-title{
+      opacity: 1;
+      z-index: 3;
+    }
+  }
+}
+
+
+.section7{
+
+  .squareRounded {
+      display: none;
+      width: 32px;
+      height: 32px;
+  
+      &-topLeft {
+        border-top: 2px solid #62DB54;
+        border-left: 2px solid #62DB54;
+        border-top-left-radius: 10px;
+      }
+  
+      &-topRight {
+        border-top: 2px solid #62DB54;
+        border-right: 2px solid #62DB54;
+        border-top-right-radius: 10px;
+      }
+  
+      &-bottomLeft {
+        border-bottom: 2px solid #62DB54;
+        border-left: 2px solid #62DB54;
+        border-bottom-left-radius: 10px;
+      }
+  
+      &-bottomRight {
+        border-bottom: 2px solid #62DB54;
+        border-right: 2px solid #62DB54;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  
+    .card:hover {
+      .squareRounded {
+        display: block;
+      }
+    }
+
+}
+
+.section8{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media(max-width:576px){
+    h5{
+      font-size: 24px;
+    }
+  }
+  .swiper {
+    width: 100%;
+    height: 429px;
+
+    @media (max-width:991px) {
+      height: auto;
+    }
+
+    &-img {
+      top: 0;
+      left: 10px;
+      width: 60%;
+      height: 90%;
+      border-radius: 24px;
+      position: absolute;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #7C7E77;
+        border-radius: 24px;
+        left: -10px;
+        top: 10px;
+        z-index: -1;
+
+        @media (max-width:991px) {
+          left: -5px;
+          top: 5px;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 24px;
+      }
+
+      @media (max-width:991px) {
+        position: relative;
+        width: calc(100% - 5px);
+        height: 213px;
+        left: 5px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .card {
+      width: 45%;
+      padding: 32px;
+      border-radius: 24px 24px 24px 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      &-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 32px;
+        bottom: 100%;
+        transform: translateY(50%);
+
+        @media (max-width:991px) {
+          width: 80px;
+          height: 80px;
+          right: 24px;
+          top: -30px;
+          bottom: auto;
+          transform: none;
+        }
+      }
+
+      @media (max-width:991px) {
+        position: relative;
+        width: 100%;
+        padding: 24px;
+        margin-bottom: 32px;
+      }
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      content: '';
+    }
+
+    &-button-next,
+    &-button-prev {
+      position: unset;
+      width: 24px;
+      height: 24px;
+      margin-top: 0;
+      color: #62DB54;
+    }
+
+    .swiper-pagination {
+      position: unset;
+      width: auto;
+
+      .swiper-pagination-bullet {
+        background-color: #62DB54;
+        opacity: initial;
+
+        &-active {
+          width: 16px;
+          border-radius: 100px;
+        }
+      }
+    }
+
+    &-buttons {
+      bottom: 0;
+      left: 30%;
+      transform: translateX(-50%);
+      z-index: 10;
+      position: absolute;
+
+      @media (max-width: 991px) {
+        position: initial;
+        transform: none;
+      }
+    }
+  }
+}
+
+
+.section9{
+  background-color: #000;
+  color: #fff;
+  .material-icons{
+    font-size: 100px;
+  }
+  @media(max-width:576px){
+    h5{
+      font-size: 24px;
+    }
+    p{
+      font-size: 16px;
+    }
+  }
+  button{
+    .btn{
+      &:hover{
+        color: #000;
+      }      
+    }
+  }
+}
+

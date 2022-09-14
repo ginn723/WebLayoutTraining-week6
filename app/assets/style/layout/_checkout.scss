@@ -1,0 +1,30 @@
+.step{
+  position: relative;
+  .btn{
+    padding: 0 .4rem;
+    font-size: 12px;
+  }
+  .btn-outline-light.active{
+    background-color: $primary;
+    color: #fff;
+  }
+   
+}
+
+.step1, .step2{
+  margin-right: 5rem;
+  &::after {
+      content: "⸺⸺⸺⸺⸺⸺";
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 2.7rem;
+    }
+}
+
+.step-title{
+  color: $light;
+}
+.step-title.active {
+  color: $primary;
+}
