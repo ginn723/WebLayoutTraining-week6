@@ -14063,6 +14063,7 @@ body {
   font-family: 'Noto Sans TC', sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 ol,
@@ -14141,7 +14142,7 @@ button {
 }
 
 .section1 .banner {
-  padding: 52px 86px;
+  padding: 52px 0;
   border: 1px solid #fff;
 }
 
